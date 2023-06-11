@@ -1,0 +1,5 @@
+Open MSI Afterburner
+
+Save Your Overclock Profile to "Profile 1"
+
+Save Your Idle Profile to "Profile 2"
