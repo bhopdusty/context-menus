@@ -1,0 +1,1 @@
+You can Edit "BufferbloatToggle.bat" And Change “mtu=950” to a Lower Number if You Know What You’re Doing (Also Could Make it Higher if it Causes Issues)
