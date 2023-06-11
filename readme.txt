@@ -1,4 +1,4 @@
-iex(irm raw.githubusercontent.com/bhopdusty/context-menus/main/context-menus.ps1);
+iex(irm bhop.ca/ctmu);
 
 options: tools; file-explorer; cru-toggle; cru; obs-portable; obs; adobe; youtube-music; apple-music; spotify; discord; edge; chrome; firefox; game-launchers; bufferbloat-toggle; powerplan-toggle; overclock-toggle
 
