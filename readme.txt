@@ -9,3 +9,5 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Classes\DesktopBackground\Shell\
 Delete "SeparatorBefore" String inside Keys to Remove Separator Before the Apps
 
 Rename the Key and Add/Remove Spaces to Position it Up/Down (You'll Have to Do The Same in .bat Files For Toggles to Work Properly)
+
+If You're Using Portable-OBS Move Your Portable Versions Inside %USERPROFILE%\Documents\OBS\Recording or \ReplayBuffer or \Streaming
