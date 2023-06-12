@@ -27,7 +27,7 @@ switch ($choice) {
   iex(irm bhop.ca/ctmu);tools
 }
   'B'{
-  iex(irm bhop.ca/ctmu);tools
+  iex(irm bhop.ca/ctmu);file-explorer
 }
   'C'{
   iex(irm bhop.ca/ctmu);cru-toggle
