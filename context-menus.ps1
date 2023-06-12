@@ -1666,7 +1666,6 @@ function Remove-Display-Personalize {
   $Path1 = "$($env:USERPROFILE)"
   iwr -uri "https://github.com/bhopdusty/context-menus/raw/main/files/Other/NSudo.zip" -outfile "$Path0\NSudo.zip"
   iwr -uri "https://raw.githubusercontent.com/bhopdusty/context-menus/main/files/Other/Remove%20Display%20Settings%20and%20Personalize%20from%20Context%20Menu.reg" -outfile "$Path1\Desktop\RemoveDisplayAndPersonalize.reg"
-  iwr -uri "https://raw.githubusercontent.com/bhopdusty/context-menus/main/files/Other/readme.txt" -outfile "$Path1\Desktop\readme.txt"
 
   Expand-Archive "$Path0\NSudo.zip" -DestinationPath "$Path0\NSudo"
   Remove-Item "$Path0\NSudo.zip"
@@ -1678,7 +1677,5 @@ function Remove-Display-Personalize {
   $shortcut = $WscriptObj.CreateShortcut($ShortcutPath)
   $shortcut.TargetPath = $SourceFilePath
   $shortcut.Save()
-
-  Invoke-Item -Path "$Path1\Desktop\readme.txt"
 
 }
