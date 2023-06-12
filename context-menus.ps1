@@ -93,7 +93,7 @@ function Tools {
   $Name2         = '(Default)'
   $Value0        = 'SHELL32.dll,12'
   $Value1        = 'Ram Cleaner'
-  $Value2        = 'powershell Start-Process powershell -Verb RunAs {EmptyStandbyList}'
+  $Value2        = 'powershell Start-Process powershell -Verb RunAs {"%USERPROFILE%\Documents\RamCleaner\EmptyStandbyList.exe"}'
 
   # Create the keys if they do not exist
   If (-NOT (Test-Path $RegistryPath0)) {
@@ -106,7 +106,7 @@ function Tools {
   # Now set the values
   New-ItemProperty -Path $RegistryPath0 -Name $Name0 -Value $Value0 -PropertyType String -Force
   New-ItemProperty -Path $RegistryPath0 -Name $Name1 -Value $Value1 -PropertyType String -Force
-  New-ItemProperty -Path $RegistryPath1 -Name $Name2 -Value $Value2 -PropertyType String -Force
+  New-ItemProperty -Path $RegistryPath1 -Name $Name2 -Value $Value2 -PropertyType ExpandString -Force
 
   # Create Tools 'Cleanup' - 'File Cleanup' Keys and Command
 
@@ -129,9 +129,22 @@ function Tools {
    }
 
   # Now set the values
+
   New-ItemProperty -Path $RegistryPath0 -Name $Name0 -Value $Value0 -PropertyType String -Force
   New-ItemProperty -Path $RegistryPath0 -Name $Name1 -Value $Value1 -PropertyType String -Force
   New-ItemProperty -Path $RegistryPath1 -Name $Name2 -Value $Value2 -PropertyType ExpandString -Force
+
+  # Download files needed
+  
+  $Path0 = "$($env:TEMP)"
+  $Path1 = "$($env:USERPROFILE)"
+
+  New-Item -ItemType Directory -Path "$Path1\Documents\RamCleaner"
+
+  Invoke-WebRequest -uri "https://github.com/bhopdusty/context-menus/raw/main/files/Other/RamCleaner.zip" -outfile "$Path0\RamCleaner.zip"
+
+  Expand-Archive "$Path0\RamCleaner.zip" -DestinationPath "$Path1\Documents\RamCleaner"
+  Remove-Item "$Path0\RamCleaner.zip"
 
   # Create Tools 'Cleanup' - 'Recycle Bin' Keys and Command
 
@@ -183,6 +196,18 @@ function Tools {
   New-ItemProperty -Path $RegistryPath0 -Name $Name1 -Value $Value1 -PropertyType String -Force
   New-ItemProperty -Path $RegistryPath1 -Name $Name2 -Value $Value2 -PropertyType ExpandString -Force
 
+  # Download files needed
+
+  $Path0 = "$($env:TEMP)"
+  $Path1 = "$($env:USERPROFILE)"
+
+  New-Item -ItemType Directory -Path "$Path1\Documents\SensMatcher"
+
+  Invoke-WebRequest -uri "https://github.com/bhopdusty/context-menus/raw/main/files/Documents/SensMatcher.zip" -outfile "$Path0\SensMatcher.zip"
+
+  Expand-Archive "$Path0\SensMatcher.zip" -DestinationPath "$Path1\Documents\SensMatcher"
+  Remove-Item "$Path0\SensMatcher.zip"
+
   # Create Tools 'Regedit' Keys and Command
 
   # Set variables to indicate values and keys to set
@@ -208,17 +233,17 @@ function Tools {
   New-ItemProperty -Path $RegistryPath0 -Name $Name1 -Value $Value1 -PropertyType String -Force
   New-ItemProperty -Path $RegistryPath1 -Name $Name2 -Value $Value2 -PropertyType String -Force
 
-  # Create Tools 'HWINFO' Keys and Command
+  # Create Tools 'HWiNFO' Keys and Command
 
   # Set variables to indicate values and keys to set
-  $RegistryPath0 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\         HWINFO'
-  $RegistryPath1 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\         HWINFO\Command'
+  $RegistryPath0 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\         HWiNFO'
+  $RegistryPath1 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\         HWiNFO\Command'
   $Name0         = 'Icon'
   $Name1         = 'MUIVerb'
   $Name2         = '(Default)'
-  $Value0        = '%USERPROFILE%\Documents\HWINFO\HWiNFO64.exe'
-  $Value1        = 'HWINFO'
-  $Value2        = '%USERPROFILE%\Documents\HWINFO\HWiNFO64.exe'
+  $Value0        = '%USERPROFILE%\Documents\HWiNFO\HWiNFO64.exe'
+  $Value1        = 'HWiNFO'
+  $Value2        = '%USERPROFILE%\Documents\HWiNFO\HWiNFO64.exe'
 
   # Create the keys if they do not exist
   If (-NOT (Test-Path $RegistryPath0)) {
@@ -232,6 +257,18 @@ function Tools {
   New-ItemProperty -Path $RegistryPath0 -Name $Name0 -Value $Value0 -PropertyType ExpandString -Force
   New-ItemProperty -Path $RegistryPath0 -Name $Name1 -Value $Value1 -PropertyType String -Force
   New-ItemProperty -Path $RegistryPath1 -Name $Name2 -Value $Value2 -PropertyType ExpandString -Force
+
+  # Download files needed
+
+  $Path0 = "$($env:TEMP)"
+  $Path1 = "$($env:USERPROFILE)"
+
+  New-Item -ItemType Directory -Path "$Path1\Documents\HWiNFO"
+
+  Invoke-WebRequest -uri "https://github.com/bhopdusty/context-menus/raw/main/files/Documents/HWiNFO.zip" -outfile "$Path0\HWiNFO.zip"
+
+  Expand-Archive "$Path0\HWiNFO.zip" -DestinationPath "$Path1\Documents\HWiNFO"
+  Remove-Item "$Path0\HWiNFO.zip"
 
   # Create Tools 'CMD' Keys and Command
 
@@ -308,6 +345,18 @@ function Tools {
   New-ItemProperty -Path $RegistryPath0 -Name $Name1 -Value $Value1 -PropertyType String -Force
   New-ItemProperty -Path $RegistryPath1 -Name $Name2 -Value $Value2 -PropertyType ExpandString -Force
 
+  # Download files needed
+
+  $Path0 = "$($env:TEMP)"
+  $Path1 = "$($env:USERPROFILE)"
+
+  New-Item -ItemType Directory -Path "$Path1\Documents\Autoruns"
+
+  Invoke-WebRequest -uri "https://github.com/bhopdusty/context-menus/raw/main/files/Documents/Autoruns.zip" -outfile "$Path0\Autoruns.zip"
+
+  Expand-Archive "$Path0\Autoruns.zip" -DestinationPath "$Path1\Documents\Autoruns"
+  Remove-Item "$Path0\Autoruns.zip"
+
   # Create Tools 'GoXLR' Keys and Command
 
   # Set variables to indicate values and keys to set
@@ -383,6 +432,18 @@ function Tools {
   New-ItemProperty -Path $RegistryPath0 -Name $Name1 -Value $Value1 -PropertyType String -Force
   New-ItemProperty -Path $RegistryPath1 -Name $Name2 -Value $Value2 -PropertyType ExpandString -Force
 
+  # Download files needed
+
+  $Path0 = "$($env:TEMP)"
+  $Path1 = "$($env:USERPROFILE)"
+
+  New-Item -ItemType Directory -Path "$Path1\Documents\AnyDesk"
+
+  Invoke-WebRequest -uri "https://github.com/bhopdusty/context-menus/raw/main/files/Documents/AnyDesk.zip" -outfile "$Path0\AnyDesk.zip"
+
+  Expand-Archive "$Path0\AnyDesk.zip" -DestinationPath "$Path1\Documents\AnyDesk"
+  Remove-Item "$Path0\AnyDesk.zip"
+
   # Create Tools 'KeePass' Keys and Command
 
   # Set variables to indicate values and keys to set
@@ -408,6 +469,18 @@ function Tools {
   New-ItemProperty -Path $RegistryPath0 -Name $Name1 -Value $Value1 -PropertyType String -Force
   New-ItemProperty -Path $RegistryPath1 -Name $Name2 -Value $Value2 -PropertyType ExpandString -Force
   
+  # Download files needed
+
+  $Path0 = "$($env:TEMP)"
+  $Path1 = "$($env:USERPROFILE)"
+
+  New-Item -ItemType Directory -Path "$Path1\Documents\KeePass"
+
+  Invoke-WebRequest -uri "https://github.com/bhopdusty/context-menus/raw/main/files/Documents/KeePass.zip" -outfile "$Path0\KeePass.zip"
+
+  Expand-Archive "$Path0\KeePass.zip" -DestinationPath "$Path1\Documents\KeePass"
+  Remove-Item "$Path0\KeePass.zip"
+
 }
 
 function File-Explorer {
@@ -467,6 +540,18 @@ function File-Explorer {
   New-ItemProperty -Path $RegistryPath0 -Name $Name0 -Value $Value0 -PropertyType ExpandString -Force
   New-ItemProperty -Path $RegistryPath0 -Name $Name1 -Value $Value1 -PropertyType String -Force
   New-ItemProperty -Path $RegistryPath1 -Name $Name2 -Value $Value2 -PropertyType ExpandString -Force
+
+  # Download files needed
+
+  $Path0 = "$($env:TEMP)"
+  $Path1 = "$($env:USERPROFILE)"
+
+  New-Item -ItemType Directory -Path "$Path1\Documents\Everything"
+
+  Invoke-WebRequest -uri "https://github.com/bhopdusty/context-menus/raw/main/files/Documents/Everything.zip" -outfile "$Path0\Everything.zip"
+
+  Expand-Archive "$Path0\Everything.zip" -DestinationPath "$Path1\Documents\Everything"
+  Remove-Item "$Path0\Everything.zip"
 
   # Create File Explorer - 'Desktop' Keys and Command
 
@@ -653,6 +738,20 @@ function CRU-Toggle {
   New-ItemProperty -Path $RegistryPath0 -Name $Name3 -Value $Value3 -PropertyType String -Force
   New-ItemProperty -Path $RegistryPath1 -Name $Name4 -Value $Value4 -PropertyType ExpandString -Force
 
+  # Download files needed
+
+  $Path0 = "$($env:TEMP)"
+  $Path1 = "$($env:USERPROFILE)"
+
+  New-Item -ItemType Directory -Path "$Path1\Documents\Toggles\CRU"
+
+  Invoke-WebRequest -uri "https://github.com/bhopdusty/context-menus/raw/main/files/Documents/Toggles/CRU.zip" -outfile "$Path0\CRU.zip"
+
+  Expand-Archive "$Path0\CRU.zip" -DestinationPath "$Path1\Documents\Toggles\CRU"
+  Remove-Item "$Path0\CRU.zip"
+
+  Invoke-Item -Path "$Path1\Documents\Toggles\CRU"
+
 }
 
 function CRU {
@@ -762,6 +861,20 @@ function CRU {
   New-ItemProperty -Path $RegistryPath0 -Name $Name0 -Value $Value0 -PropertyType ExpandString -Force
   New-ItemProperty -Path $RegistryPath0 -Name $Name1 -Value $Value1 -PropertyType String -Force
   New-ItemProperty -Path $RegistryPath1 -Name $Name2 -Value $Value2 -PropertyType ExpandString -Force
+
+  # Download files needed
+
+  $Path0 = "$($env:TEMP)"
+  $Path1 = "$($env:USERPROFILE)"
+
+  New-Item -ItemType Directory -Path "$Path1\Documents\Toggles\CRU"
+
+  Invoke-WebRequest -uri "https://github.com/bhopdusty/context-menus/raw/main/files/Documents/Toggles/CRU.zip" -outfile "$Path0\CRU.zip"
+
+  Expand-Archive "$Path0\CRU.zip" -DestinationPath "$Path1\Documents\Toggles\CRU"
+  Remove-Item "$Path0\CRU.zip"
+
+  Invoke-Item -Path "$Path1\Documents\Toggles\CRU"
 
 }
 
@@ -907,6 +1020,18 @@ function OBS-Portable {
   New-ItemProperty -Path $RegistryPath0 -Name $Name0 -Value $Value0 -PropertyType ExpandString -Force
   New-ItemProperty -Path $RegistryPath0 -Name $Name1 -Value $Value1 -PropertyType String -Force
   New-ItemProperty -Path $RegistryPath1 -Name $Name2 -Value $Value2 -PropertyType ExpandString -Force
+
+  # Download readme
+
+  $Path0 = "$($env:USERPROFILE)"
+
+  New-Item -ItemType Directory -Path "$Path0\Documents\OBS\Recording"
+  New-Item -ItemType Directory -Path "$Path0\Documents\OBS\ReplayBuffer"
+  New-Item -ItemType Directory -Path "$Path0\Documents\OBS\Streaming"
+
+  Invoke-WebRequest -uri "https://github.com/bhopdusty/context-menus/raw/main/files/Documents/OBS/readme.txt" -outfile "$Path0\Desktop\readme.txt"
+
+  Invoke-Item -Path "$Path0\Desktop\readme.txt"
 
 }
 
@@ -1419,6 +1544,20 @@ function Bufferbloat-Toggle {
   New-ItemProperty -Path $RegistryPath0 -Name $Name3 -Value $Value3 -PropertyType String -Force
   New-ItemProperty -Path $RegistryPath1 -Name $Name4 -Value $Value4 -PropertyType ExpandString -Force
 
+  # Download Files Needed
+
+  $Path0 = "$($env:TEMP)"
+  $Path1 = "$($env:USERPROFILE)"
+
+  New-Item -ItemType Directory -Path "$Path1\Documents\Toggles\Bufferbloat"
+
+  Invoke-WebRequest -uri "https://github.com/bhopdusty/context-menus/raw/main/files/Documents/Toggles/Bufferbloat.zip" -outfile "$Path0\Bufferbloat.zip"
+
+  Expand-Archive "$Path0\Bufferbloat.zip" -DestinationPath "$Path1\Documents\Toggles\Bufferbloat"
+  Remove-Item "$Path0\Bufferbloat.zip"
+
+  Invoke-Item -Path "$Path1\Documents\Toggles\Bufferbloat"
+
 }
 
 function PowerPlan-Toggle {
@@ -1454,11 +1593,25 @@ function PowerPlan-Toggle {
   New-ItemProperty -Path $RegistryPath0 -Name $Name3 -Value $Value3 -PropertyType String -Force
   New-ItemProperty -Path $RegistryPath1 -Name $Name4 -Value $Value4 -PropertyType ExpandString -Force
 
+  # Download files needed
+
+  $Path0 = "$($env:TEMP)"
+  $Path1 = "$($env:USERPROFILE)"
+
+  New-Item -ItemType Directory -Path "$Path1\Documents\Toggles\PowerPlan"
+
+  Invoke-WebRequest -uri "https://github.com/bhopdusty/context-menus/raw/main/files/Documents/Toggles/PowerPlan.zip" -outfile "$Path0\PowerPlan.zip"
+
+  Expand-Archive "$Path0\PowerPlan.zip" -DestinationPath "$Path1\Documents\Toggles\PowerPlan"
+  Remove-Item "$Path0\PowerPlan.zip"
+
+  Invoke-Item -Path "$Path1\Documents\Toggles\PowerPlan"
+
 }
 
 function Overclock-Toggle {
 
-  # Create 'Power Plan Toggle' Keys and Command
+  # Create 'Overclock Toggle' Keys and Command
 
   # Set variables to indicate values and keys to set
   $RegistryPath0 = 'HKLM:\Software\Classes\DesktopBackground\Shell\ OverclockToggle'
@@ -1488,5 +1641,44 @@ function Overclock-Toggle {
   New-ItemProperty -Path $RegistryPath0 -Name $Name2 -Value $Value2 -PropertyType String -Force
   New-ItemProperty -Path $RegistryPath0 -Name $Name3 -Value $Value3 -PropertyType String -Force
   New-ItemProperty -Path $RegistryPath1 -Name $Name4 -Value $Value4 -PropertyType ExpandString -Force
+
+  # Download files needed
+
+  $Path0 = "$($env:TEMP)"
+  $Path1 = "$($env:USERPROFILE)"
+
+  New-Item -ItemType Directory -Path "$Path1\Documents\Toggles\Overclock"
+
+  Invoke-WebRequest -uri "https://github.com/bhopdusty/context-menus/raw/main/files/Documents/Toggles/Overclock.zip" -outfile "$Path0\Overclock.zip"
+
+  Expand-Archive "$Path0\Overclock.zip" -DestinationPath "$Path1\Documents\Toggles\Overclock"
+  Remove-Item "$Path0\Overclock.zip"
+
+  Invoke-Item -Path "$Path1\Documents\Toggles\Overclock"
+
+}
+
+function Remove-Display-Personalize {
+
+  # Download files needed
+
+  $Path0 = "$($env:TEMP)"
+  $Path1 = "$($env:USERPROFILE)"
+  iwr -uri "https://github.com/bhopdusty/context-menus/raw/main/files/Other/NSudo.zip" -outfile "$Path0\NSudo.zip"
+  iwr -uri "https://raw.githubusercontent.com/bhopdusty/context-menus/main/files/Other/Remove%20Display%20Settings%20and%20Personalize%20from%20Context%20Menu.reg" -outfile "$Path1\Desktop\RemoveDisplayAndPersonalize.reg"
+  iwr -uri "https://raw.githubusercontent.com/bhopdusty/context-menus/main/files/Other/readme.txt" -outfile "$Path1\Desktop\readme.txt"
+
+  Expand-Archive "$Path0\NSudo.zip" -DestinationPath "$Path0\NSudo"
+  Remove-Item "$Path0\NSudo.zip"
+
+  $SourceFilePath = "$Path0\NSudo\NSudo Launcher\Nsudo.bat"
+  $ShortcutPath = "$Path1\Desktop\Nsudo Shortcut.lnk"
+
+  $WScriptObj = New-Object -ComObject ("WScript.Shell")
+  $shortcut = $WscriptObj.CreateShortcut($ShortcutPath)
+  $shortcut.TargetPath = $SourceFilePath
+  $shortcut.Save()
+
+  Invoke-Item -Path "$Path1\Desktop\readme.txt"
 
 }
