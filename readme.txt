@@ -1,6 +1,4 @@
-iex(irm bhop.ca/ctmu);
-
-options: tools; file-explorer; cru-toggle; cru; obs-portable; obs; adobe; youtube-music; apple-music; spotify; discord; edge; chrome; firefox; game-launchers; bufferbloat-toggle; powerplan-toggle; overclock-toggle;remove-display-personalize
+iex(irm https://bhop.ca/menu)
 
 To Customize Separators and Positions of Apps, Open Regedit and Go to
 
