@@ -36,8 +36,8 @@ function Tools {
   # Create Tools 'Cleanup' Keys and SubCommands
 
   # Set variables to indicate values and keys to set
-  $RegistryPath0 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\             Cleanup'
-  $RegistryPath1 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\             Cleanup\Shell'
+  $RegistryPath0 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\          Cleanup'
+  $RegistryPath1 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\          Cleanup\Shell'
   $Name0         = 'Icon'
   $Name1         = 'MUIVerb'
   $Name2         = 'SubCommands'
@@ -61,8 +61,8 @@ function Tools {
   # Create Tools 'Cleanup' - 'Clear Clipboard' Keys and Command
 
   # Set variables to indicate values and keys to set
-  $RegistryPath0 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\             Cleanup\Shell\    ClearClipboard'
-  $RegistryPath1 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\             Cleanup\Shell\    ClearClipboard\Command'
+  $RegistryPath0 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\          Cleanup\Shell\    ClearClipboard'
+  $RegistryPath1 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\          Cleanup\Shell\    ClearClipboard\Command'
   $Name0         = 'Icon'
   $Name1         = 'MUIVerb'
   $Name2         = '(Default)'
@@ -86,8 +86,8 @@ function Tools {
   # Create Tools 'Cleanup' - 'Ram Cleaner' Keys and Command
 
   # Set variables to indicate values and keys to set
-  $RegistryPath0 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\             Cleanup\Shell\   RamCleaner'
-  $RegistryPath1 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\             Cleanup\Shell\   RamCleaner\Command'
+  $RegistryPath0 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\          Cleanup\Shell\   RamCleaner'
+  $RegistryPath1 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\          Cleanup\Shell\   RamCleaner\Command'
   $Name0         = 'Icon'
   $Name1         = 'MUIVerb'
   $Name2         = '(Default)'
@@ -111,8 +111,8 @@ function Tools {
   # Create Tools 'Cleanup' - 'File Cleanup' Keys and Command
 
   # Set variables to indicate values and keys to set
-  $RegistryPath0 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\             Cleanup\Shell\  FileCleanup'
-  $RegistryPath1 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\             Cleanup\Shell\  FileCleanup\Command'
+  $RegistryPath0 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\          Cleanup\Shell\  FileCleanup'
+  $RegistryPath1 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\          Cleanup\Shell\  FileCleanup\Command'
   $Name0         = 'Icon'
   $Name1         = 'MUIVerb'
   $Name2         = '(Default)'
@@ -149,8 +149,8 @@ function Tools {
   # Create Tools 'Cleanup' - 'Recycle Bin' Keys and Command
 
   # Set variables to indicate values and keys to set
-  $RegistryPath0 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\             Cleanup\Shell\ RecycleBin'
-  $RegistryPath1 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\             Cleanup\Shell\ RecycleBin\Command'
+  $RegistryPath0 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\          Cleanup\Shell\ RecycleBin'
+  $RegistryPath1 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\          Cleanup\Shell\ RecycleBin\Command'
   $Name0         = 'Icon'
   $Name1         = 'MUIVerb'
   $Name2         = '(Default)'
@@ -174,8 +174,8 @@ function Tools {
   # Create Tools 'Sens Matcher' Keys and Command
 
   # Set variables to indicate values and keys to set
-  $RegistryPath0 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\            SensMatcher'
-  $RegistryPath1 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\            SensMatcher\Command'
+  $RegistryPath0 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\         SensMatcher'
+  $RegistryPath1 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\         SensMatcher\Command'
   $Name0         = 'Icon'
   $Name1         = 'MUIVerb'
   $Name2         = '(Default)'
@@ -211,8 +211,8 @@ function Tools {
   # Create Tools 'Regedit' Keys and Command
 
   # Set variables to indicate values and keys to set
-  $RegistryPath0 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\           Regedit'
-  $RegistryPath1 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\           Regedit\Command'
+  $RegistryPath0 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\        Regedit'
+  $RegistryPath1 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\        Regedit\Command'
   $Name0         = 'Icon'
   $Name1         = 'MUIVerb'
   $Name2         = '(Default)'
@@ -236,8 +236,8 @@ function Tools {
   # Create Tools 'HWiNFO' Keys and Command
 
   # Set variables to indicate values and keys to set
-  $RegistryPath0 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\         HWiNFO'
-  $RegistryPath1 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\         HWiNFO\Command'
+  $RegistryPath0 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\      HWiNFO'
+  $RegistryPath1 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\      HWiNFO\Command'
   $Name0         = 'Icon'
   $Name1         = 'MUIVerb'
   $Name2         = '(Default)'
@@ -273,8 +273,8 @@ function Tools {
   # Create Tools 'CMD' Keys and Command
 
   # Set variables to indicate values and keys to set
-  $RegistryPath0 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\         CMD'
-  $RegistryPath1 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\         CMD\Command'
+  $RegistryPath0 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\      CMD'
+  $RegistryPath1 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\      CMD\Command'
   $Name0         = 'Icon'
   $Name1         = 'MUIVerb'
   $Name2         = '(Default)'
@@ -298,8 +298,8 @@ function Tools {
   # Create Tools 'PowerShell' Keys and Command
 
   # Set variables to indicate values and keys to set
-  $RegistryPath0 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\        PowerShell'
-  $RegistryPath1 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\        PowerShell\Command'
+  $RegistryPath0 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\     PowerShell'
+  $RegistryPath1 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\     PowerShell\Command'
   $Name0         = 'Icon'
   $Name1         = 'MUIVerb'
   $Name2         = '(Default)'
@@ -323,8 +323,8 @@ function Tools {
   # Create Tools 'Autoruns' Keys and Command
 
   # Set variables to indicate values and keys to set
-  $RegistryPath0 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\       Autoruns'
-  $RegistryPath1 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\       Autoruns\Command'
+  $RegistryPath0 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\    Autoruns'
+  $RegistryPath1 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\    Autoruns\Command'
   $Name0         = 'Icon'
   $Name1         = 'MUIVerb'
   $Name2         = '(Default)'
@@ -356,93 +356,6 @@ function Tools {
 
   Expand-Archive "$Path0\Autoruns.zip" -DestinationPath "$Path1\Documents\Autoruns"
   Remove-Item "$Path0\Autoruns.zip"
-
-  # Create Tools 'GoXLR' Keys and Command
-
-  # Set variables to indicate values and keys to set
-  $RegistryPath0 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\      GoXLR'
-  $RegistryPath1 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\      GoXLR\Command'
-  $Name0         = 'Icon'
-  $Name1         = 'MUIVerb'
-  $Name2         = '(Default)'
-  $Value0        = 'C:\Program Files (x86)\TC-Helicon\GOXLR\GoXLR App.exe'
-  $Value1        = 'GoXLR'
-  $Value2        = 'C:\Program Files (x86)\TC-Helicon\GOXLR\GoXLR App.exe'
-
-  # Create the keys if they do not exist
-  If (-NOT (Test-Path $RegistryPath0)) {
-      New-Item -Path $RegistryPath0 -Force | Out-Null
-  }
-  If (-NOT (Test-Path $RegistryPath1)) {
-     New-Item -Path $RegistryPath1 -Force | Out-Null
-   }
-
-  # Now set the values
-  New-ItemProperty -Path $RegistryPath0 -Name $Name0 -Value $Value0 -PropertyType String -Force
-  New-ItemProperty -Path $RegistryPath0 -Name $Name1 -Value $Value1 -PropertyType String -Force
-  New-ItemProperty -Path $RegistryPath1 -Name $Name2 -Value $Value2 -PropertyType String -Force
-
-  # Create Tools 'Elgato' Keys and Command
-
-  # Set variables to indicate values and keys to set
-  $RegistryPath0 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\     Elgato'
-  $RegistryPath1 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\     Elgato\Command'
-  $Name0         = 'Icon'
-  $Name1         = 'MUIVerb'
-  $Name2         = '(Default)'
-  $Value0        = 'C:\Program Files\Elgato\4KCaptureUtility\4KCaptureUtility.exe'
-  $Value1        = 'Elgato'
-  $Value2        = 'C:\Program Files\Elgato\4KCaptureUtility\4KCaptureUtility.exe'
-
-  # Create the keys if they do not exist
-  If (-NOT (Test-Path $RegistryPath0)) {
-      New-Item -Path $RegistryPath0 -Force | Out-Null
-  }
-  If (-NOT (Test-Path $RegistryPath1)) {
-     New-Item -Path $RegistryPath1 -Force | Out-Null
-   }
-
-  # Now set the values
-  New-ItemProperty -Path $RegistryPath0 -Name $Name0 -Value $Value0 -PropertyType String -Force
-  New-ItemProperty -Path $RegistryPath0 -Name $Name1 -Value $Value1 -PropertyType String -Force
-  New-ItemProperty -Path $RegistryPath1 -Name $Name2 -Value $Value2 -PropertyType String -Force
-
-  # Create Tools 'AnyDesk' Keys and Command
-
-  # Set variables to indicate values and keys to set
-  $RegistryPath0 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\    AnyDesk'
-  $RegistryPath1 = 'HKLM:\Software\Classes\DesktopBackground\Shell\             Tools\Shell\    AnyDesk\Command'
-  $Name0         = 'Icon'
-  $Name1         = 'MUIVerb'
-  $Name2         = '(Default)'
-  $Value0        = '%USERPROFILE%\Documents\AnyDesk\AnyDesk.exe'
-  $Value1        = 'AnyDesk'
-  $Value2        = '%USERPROFILE%\Documents\AnyDesk\AnyDesk.exe'
-
-  # Create the keys if they do not exist
-  If (-NOT (Test-Path $RegistryPath0)) {
-      New-Item -Path $RegistryPath0 -Force | Out-Null
-  }
-  If (-NOT (Test-Path $RegistryPath1)) {
-     New-Item -Path $RegistryPath1 -Force | Out-Null
-   }
-
-  # Now set the values
-  New-ItemProperty -Path $RegistryPath0 -Name $Name0 -Value $Value0 -PropertyType ExpandString -Force
-  New-ItemProperty -Path $RegistryPath0 -Name $Name1 -Value $Value1 -PropertyType String -Force
-  New-ItemProperty -Path $RegistryPath1 -Name $Name2 -Value $Value2 -PropertyType ExpandString -Force
-
-  # Download files needed
-
-  $Path0 = "$($env:TEMP)"
-  $Path1 = "$($env:USERPROFILE)"
-
-  New-Item -ItemType Directory -Path "$Path1\Documents\AnyDesk"
-
-  Invoke-WebRequest -uri "https://github.com/bhopdusty/context-menus/raw/main/files/Documents/AnyDesk.zip" -outfile "$Path0\AnyDesk.zip"
-
-  Expand-Archive "$Path0\AnyDesk.zip" -DestinationPath "$Path1\Documents\AnyDesk"
-  Remove-Item "$Path0\AnyDesk.zip"
 
   # Create Tools 'KeePass' Keys and Command
 
