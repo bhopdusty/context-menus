@@ -1,0 +1,1 @@
+Move Your Portable Versions Inside %USERPROFILE%\Documents\OBS\Recording or \ReplayBuffer or \Streaming
