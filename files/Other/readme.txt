@@ -1,4 +1,4 @@
-Open "NSudo" Drag "RemoveDisplayAndPersonalize.reg" Inside
+Drag "RemoveDisplayAndPersonalize.reg" Inside NSudo
 
 Enable All Privileges
 
