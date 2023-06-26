@@ -1,4 +1,4 @@
-iex(irm bhop.ca/cm)
+iex(irm bhop.ca/cm);context-menu
 
 To Customize Separators and Positions of Apps, Open Regedit and Go to
 
